@@ -1,0 +1,1 @@
+﻿select * from product where ProductName like '%HIS%'
