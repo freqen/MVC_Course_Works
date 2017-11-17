@@ -25,7 +25,7 @@ namespace WebApplication1.Controllers
                                                          && (x.手機.Contains(query.手機) || query.手機.Equals(null))
                                                          && (x.電話.Contains(query.電話) || query.電話.Equals(null))
                                                          && (x.Email.Contains(query.Email) || query.Email.Equals(null))
-                                                         && (x.刪除註記.Equals(query.刪除註記))
+                                                         && (x.刪除註記.Equals(query.刪除註記) || query.刪除註記.Equals(false))
                                                          ).ToList();
             return View(returnList);
         }

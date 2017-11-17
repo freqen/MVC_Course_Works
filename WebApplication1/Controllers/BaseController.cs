@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -22,5 +23,11 @@ namespace WebApplication1.Controllers
         //{
         //    this.Redirect("/").ExecuteResult(this.ControllerContext);
         //}
+
+        /*
+        protected ActionResult ExportExcel(XLWorkbook book)
+        {
+                return book.Deliver("generatedFile.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        }*/
     }
 }
